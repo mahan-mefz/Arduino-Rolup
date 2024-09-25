@@ -5,6 +5,7 @@ int motorpain = 10 ;
 int btna  = 9 ;
 int btnb = 8 ;
 
+
 boolean motorstats = false ;
 boolean btnstatus = false ; 
 boolean swith = false ; 
@@ -17,7 +18,10 @@ void setup() {
   pinMode(phtosel,INPUT);
   pinMode(btna,INPUT);
   pinMode(microsowich,INPUT);
+
+
 }
+  int an = 1 ;
 
 void loop() {
   if (btna == LOW && btnb == LOW) {
@@ -43,7 +47,14 @@ void loop() {
 
       }
   }else if (btna == HIGH ) {
-      return;
+
+    digitalWrite(motorbala,HIGH);
+    digitalWrite(motorpain, HIGH);
+      delay(100);
+    digitalWrite(motorbala,LOW);
+     digitalWrite(motorpain,LOW);
+    an = 1 ; 
+
   } else if (btnb == HIGH) {
     return;
 
