@@ -1,0 +1,12 @@
+Warning: Width correction constrained.  The width correction value must be in the range of [0.000001 mm; 0.199999 mm] for the current design rules.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-F_Cu.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-B_Cu.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-F_Paste.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-B_Paste.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-F_Silkscreen.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-B_Silkscreen.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-F_Mask.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-B_Mask.gbr'.
+Plotted to '/Users/mahan/Desktop/Rolup/rolup-Edge_Cuts.gbr'.
+Created Gerber job file '/Users/mahan/Desktop/Rolup/rolup-job.gbrjob'.
+Info: Done.
