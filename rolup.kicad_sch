@@ -1173,12 +1173,6 @@
 		(uuid "5c3f8d4a-960b-47bb-a67b-a23794e3ecda")
 	)
 	(junction
-		(at 36.83 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7827e4c9-c07d-4a5e-a70b-7d151408ec70")
-	)
-	(junction
 		(at 36.83 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1256,7 +1250,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 74.93) (xy 39.37 81.28)
+			(xy 40.64 74.93) (xy 40.64 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1306,16 +1300,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 55.88) (xy 36.83 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ded294d-48c1-48dd-9e42-b7334b445f6d")
-	)
-	(wire
-		(pts
 			(xy 30.48 48.26) (xy 30.48 50.8)
 		)
 		(stroke
@@ -1326,7 +1310,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 72.39) (xy 36.83 83.82)
+			(xy 36.83 55.88) (xy 36.83 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1506,7 +1490,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 81.28) (xy 49.53 81.28)
+			(xy 40.64 81.28) (xy 49.53 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1666,7 +1650,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 69.85) (xy 35.56 69.85)
+			(xy 40.64 69.85) (xy 35.56 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2008,7 +1992,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 39.37 72.39 90)
+		(at 40.64 72.39 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2017,15 +2001,16 @@
 		(fields_autoplaced yes)
 		(uuid "4cb25d1a-a592-4cc9-8288-91b3a579eb6b")
 		(property "Reference" "R4"
-			(at 39.37 69.85 90)
+			(at 43.18 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "10 k"
-			(at 39.37 69.85 90)
+			(at 38.1 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2034,7 +2019,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 39.37 72.39 0)
+			(at 40.64 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2043,7 +2028,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 72.39 0)
+			(at 40.64 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2052,7 +2037,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 39.37 72.39 0)
+			(at 40.64 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2515,7 +2500,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_TE-Connectivity:TE_826576-7_1x07_P3.96mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_EH_B7B-EH-A_1x07_P2.50mm_Vertical"
 			(at 19.05 60.96 0)
 			(effects
 				(font
