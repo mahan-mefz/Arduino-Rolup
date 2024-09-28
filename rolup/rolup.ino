@@ -6,9 +6,12 @@ int btna  = 9 ;
 int btnb = 8 ;
 
 
+
 boolean motorstats = false ;
 boolean btnstatus = false ; 
 boolean swith = false ; 
+
+int an = 1 ;
 
 void setup() {
   // put your setup code here, to run once:
@@ -21,9 +24,9 @@ void setup() {
 
 
 }
-  int an = 1 ;
 
 void loop() {
+
   if (btna == LOW && btnb == LOW) {
       
       if (phtosel == LOW && motorstats == false) {
@@ -55,8 +58,15 @@ void loop() {
      digitalWrite(motorpain,LOW);
     an = 1 ; 
 
-  } else if (btnb == HIGH) {
-    return;
+  } else if (btnb == HIGH && motorstats == false) {
+
+    digitalWrite(motorbala,HIGH);
+    digitalWrite(motorpain, HIGH);
+      delay(100);
+    digitalWrite(motorbala,LOW);
+      digitalWrite(motorpain,LOW);
+    an = 1 ; 
+
 
   }
 
