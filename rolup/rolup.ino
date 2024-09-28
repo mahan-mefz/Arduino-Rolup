@@ -65,7 +65,7 @@ void loop() {
       delay(100);
     digitalWrite(motorbala,LOW);
       digitalWrite(motorpain,LOW);
-    an = 1 ; 
+    an = 2 ; 
 
 
   }
