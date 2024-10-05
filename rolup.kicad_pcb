@@ -3287,7 +3287,7 @@
 		(pad "1" thru_hole circle
 			(at 0 0 90)
 			(size 2 2)
-			(drill 0.7)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "Net-(J1-Pin_1)")
