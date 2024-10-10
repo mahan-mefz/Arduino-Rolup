@@ -7,32 +7,42 @@ int btnb = 8 ;
 
 
 
-boolean motorstats = false ;
+int motorstats = 0 ;
 boolean btnstatus = false ; 
 boolean swith = false ; 
 
 int an = 1 ;
-
+ 
 void setup() {
-  // put your setup code here, to run once:
+  r
   pinMode(motorbala,OUTPUT); 
   pinMode(motorpain,OUTPUT);
-  pinMode(btnb,INPUT);
-  pinMode(phtosel,INPUT);
+    // خروجی موتور 
   pinMode(btna,INPUT);
+  pinMode(btnb,INPUT);
+
+  pinMode(phtosel,INPUT);
   pinMode(microsowich,INPUT);
-
-
 }
 
 void loop() {
 
+      do {
+      // دستورات یا کدی که باید اجرا شود
+      digitalWrite(motorbala, LOW);
+      digitalWrite(motorpain, LOW);
+      if (microsowich == HIGH){
+        return;
+      }  
+    } while (شرط);
+
   if (btna == LOW && btnb == LOW) {
       
-      if (phtosel == LOW && motorstats == false) {
+      // مودل هوشمند 
+      if (phtosel == LOW && motorstats == 0) {
             digitalWrite(motorbala, LOW);
             digitalWrite(motorpain, LOW);
-            motorstats = true;
+            motorstats = 1;
           if (microsowich == HIGH ){
             swith = true ; 
             return;
