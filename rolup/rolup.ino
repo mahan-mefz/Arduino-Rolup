@@ -8,33 +8,39 @@ int btnb = 8 ;
 
 
 int motorstats = 0 ;
-boolean btnstatus = false ; 
-boolean swith = false ; 
+bool btnstatus = false ; 
+bool swith = false ; 
+
+
+
 
 int an = 1 ;
  
 void setup() {
-  r
+  
   pinMode(motorbala,OUTPUT); 
+    // موتور بالا 
   pinMode(motorpain,OUTPUT);
-    // خروجی موتور 
+    // موتور پایین 
   pinMode(btna,INPUT);
   pinMode(btnb,INPUT);
-
+    // کلید  
   pinMode(phtosel,INPUT);
+    // فوتوسل 
   pinMode(microsowich,INPUT);
+    // میکروسویچ
 }
 
 void loop() {
 
       do {
-      // دستورات یا کدی که باید اجرا شود
+        // کالیبره کردن کد 
       digitalWrite(motorbala, LOW);
       digitalWrite(motorpain, LOW);
       if (microsowich == HIGH){
         return;
       }  
-    } while (شرط);
+    } while (return);
 
   if (btna == LOW && btnb == LOW) {
       
@@ -46,21 +52,20 @@ void loop() {
           if (microsowich == HIGH ){
             swith = true ; 
             return;
-            
           }
-      } else if (phtosel == HIGH && motorstats == true){
+      } else if (phtosel == HIGH && motorstats == 1){
           digitalWrite(motorbala, HIGH);
           digitalWrite(motorpain, HIGH);
+          // موتور روشن شود 
           delay(190);
+          // بعد از تایم مد نظر 
           digitalWrite(motorbala, LOW);
           digitalWrite(motorpain, LOW);
-            swith = false;
-            motorstats = false ;
+          //موتور خاموش شود 
         } else {
 
       }
-  }else if (btna == HIGH ) {
-
+  }else if (btna == HIGH && btna ) { 
     digitalWrite(motorbala,HIGH);
     digitalWrite(motorpain, HIGH);
       delay(100);
