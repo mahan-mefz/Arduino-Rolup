@@ -33,14 +33,14 @@ void setup() {
 
 void loop() {
 
-      do {
-        // کالیبره کردن کد 
-      digitalWrite(motorbala, LOW);
-      digitalWrite(motorpain, LOW);
-      if (microsowich == HIGH){
-        return;
-      }  
-    } while (return);
+      // do {
+      //   // کالیبره کردن کد 
+      // digitalWrite(motorbala, LOW);
+      // digitalWrite(motorpain, LOW);
+      // if (microsowich == HIGH){
+      //   return;
+      // }  
+      // } while (an == 2);
 
   if (btna == LOW && btnb == LOW) {
       
@@ -49,39 +49,46 @@ void loop() {
             digitalWrite(motorbala, LOW);
             digitalWrite(motorpain, LOW);
             motorstats = 1;
-          if (microsowich == HIGH ){
-            swith = true ; 
+          if (microsowich == HIGH ){ 
             return;
           }
       } else if (phtosel == HIGH && motorstats == 1){
           digitalWrite(motorbala, HIGH);
           digitalWrite(motorpain, HIGH);
           // موتور روشن شود 
-          delay(190);
+          delay(1900);
           // بعد از تایم مد نظر 
           digitalWrite(motorbala, LOW);
           digitalWrite(motorpain, LOW);
           //موتور خاموش شود 
+          motorstats = 0 ;
+          // وضعیت موتور 
         } else {
 
       }
-  }else if (btna == HIGH && btna ) { 
+  }else if (btna == HIGH && btnb == LOW && motorstats == 1) { 
+    // بالا رفتن 
+    // موتور روشن شود 
     digitalWrite(motorbala,HIGH);
     digitalWrite(motorpain, HIGH);
-      delay(100);
+    //  بعد از تمام شدن تایم
+      delay(1000);
+    //  بعد از تمام شدن تایم
     digitalWrite(motorbala,LOW);
-     digitalWrite(motorpain,LOW);
-    an = 1 ; 
+    digitalWrite(motorpain,LOW);
+    // موتور خاموش شود 
+    motorstats = 0 ;
 
-  } else if (btnb == HIGH && motorstats == false) {
-
+  } else if (btnb == HIGH && motorstats == 0) {
+    // پایین اومد
     digitalWrite(motorbala,HIGH);
     digitalWrite(motorpain, HIGH);
-      delay(100);
+    //روشن شدن موتور
+      delay(1000);
+    // تایمر برای موتور 
     digitalWrite(motorbala,LOW);
-      digitalWrite(motorpain,LOW);
-    an = 2 ; 
-
+    digitalWrite(motorpain,LOW);
+    // موتور در خاموش شود 
 
   }
 
